@@ -17,11 +17,9 @@ namespace w11_2
         public double Volume { get; set; }
         public double Canale { get; set; }
         public string StatoVolume { get; set; }
-        public string volumepiù { get; set; }
-        public string volumemeno { get; set; }
 
         public Televisione() { }
-        //  public Televisione(string stato, string volume, string canale, string statoVolume) : this(stato, volume, canale, statoVolume) { }
+       //   public Televisione(string _stato, string _volume) : this(_stato, _volume) { }
         public Televisione(string stato, double volume, double canale, string statoVolume)
         {
             Stato = stato;
@@ -30,7 +28,6 @@ namespace w11_2
             StatoVolume = statoVolume;
         }
 
-    
 
         public string PulsanteAccensione()
         {
@@ -91,7 +88,7 @@ namespace w11_2
             return Canale;
         }
 
-        public string printStatoTv()
+        public string PrintStatoTv()
         {
            return"On/Off "+ Stato + "Volume " + Volume+ "Canale  " + Canale + "StatoVolume " + StatoVolume;
 
